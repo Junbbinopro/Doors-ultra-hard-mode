@@ -167,7 +167,7 @@ end)()
 -- Him
 coroutine.wrap(function()
     while true do
-    wait(100)
+    wait(950)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/trungdepth-dot/Him-entity-doors/refs/heads/main/Him"))()
     
 end
