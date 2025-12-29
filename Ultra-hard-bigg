@@ -127,7 +127,7 @@ end)()
 -- Classio
 coroutine.wrap(function()
     while true do
-    wait(179)
+    wait(130)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/J63633S/Laver-mode/refs/heads/main/Classio-Reboundier"))()
 
 end
@@ -167,7 +167,7 @@ end)()
 -- Him
 coroutine.wrap(function()
     while true do
-    wait(950)
+    wait(850)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/trungdepth-dot/Him-entity-doors/refs/heads/main/Him"))()
     
 end
@@ -177,7 +177,7 @@ end)()
 -- Guardian
 coroutine.wrap(function()
     while true do
-    wait(700)
+    wait(600)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Junbbinopro/Guardian-entity/refs/heads/main/Guardian"))()
     
 end
@@ -187,7 +187,7 @@ end)()
 -- Surge
 coroutine.wrap(function()
     while true do
-    wait(600)
+    wait(550)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Junbbinopro/Surge-entity/refs/heads/main/Surge"))()
     
 end
@@ -227,7 +227,7 @@ end)()
 -- A-60
 coroutine.wrap(function()
     while true do
-    wait(900)
+    wait(780)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/trungdepth-dot/A-60/refs/heads/main/A-60"))()
     
 end
@@ -237,7 +237,7 @@ end)()
 -- 350
 coroutine.wrap(function()
     while true do
-    wait(800)
+    wait(730)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Junbbinopro/350-entity/refs/heads/main/350"))()
     
 end
@@ -287,7 +287,7 @@ barFill.BorderSizePixel = 0
 local mobileBtn = Instance.new("TextButton", screenGui)
 mobileBtn.Name = "SprintBtn"
 mobileBtn.Size = UDim2.new(0, 65, 0, 65)
-mobileBtn.Position = UDim2.new(0.8, 0, 0.73, 0)
+mobileBtn.Position = UDim2.new(0.78, 0, 0.73, 0)
 mobileBtn.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 mobileBtn.BackgroundTransparency = 0.4
 mobileBtn.Text = "RUN"
