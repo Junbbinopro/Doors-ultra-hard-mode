@@ -1,0 +1,334 @@
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("doors ultra hard mode loaded by Jun Version V1",true)
+ wait(6)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("credits: Jun, zunxd creator[candle script], TraMinhNgoc,",true)
+ wait(6)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Wait Load Mode",true)
+ wait(6)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption(" good luck",true)
+ wait(2)
+
+--Cave ambience
+local sound = Instance.new("Sound")
+
+
+sound.SoundId = "rbxassetid://9114625745"
+
+sound.Volume = 1
+
+sound.Looped = true
+
+sound:Play()
+
+sound.Parent = workspace
+
+-- Door Changer Floor 2 And Sound
+coroutine.wrap(function()
+    while true do
+        wait(0.0005)
+workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Door.Door.Open.SoundId = "rbxassetid://18754714998"
+workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value]:FindFirstChild("Door"):FindFirstChild("Door").Material = "Rock"
+workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value]:FindFirstChild("Door"):FindFirstChild("Door"):FindFirstChild("Sign").Material = "Rock"
+    end
+end)()
+
+-- Fog 
+task.spawn(function()
+    task.wait()
+    if game:GetService("Lighting"):FindFirstChild("Atmosphere") then
+        game.Lighting.Atmosphere:Destroy()
+    end
+    game.Lighting.FogColor = Color3.new(0.133333, 0.149020, 0.239216)
+    game.Lighting.FogEnd = 60
+    game.Lighting.FogStart = 0
+end)
+
+-- goofy screech
+game.ReplicatedStorage.Entities.Screech.Top.Eyes.Color = Color3.fromRGB(176,0,0)
+game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Modules.Screech.Caught.SoundId = "rbxassetid://17309157540"
+game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Modules.Screech.Caught.PlaybackSpeed = 1.6
+game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Modules.Screech.Attack.SoundId = "rbxassetid://135968179377207"
+
+-- Corrode
+coroutine.wrap(function()
+    while true do
+        wait(80)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/J63633S/Laver-mode/refs/heads/main/Corrode"))()
+
+end
+
+end)()
+
+-- Death
+coroutine.wrap(function()
+    while true do
+        wait(420)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/J63633S/Laver-mode/refs/heads/main/Death"))()
+
+end
+
+end)()
+
+-- Moriarty
+coroutine.wrap(function()
+    while true do
+        wait(345)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/J63633S/Laver-mode/refs/heads/main/Moriarty"))()
+
+end
+
+end)()
+
+-- Struggle
+coroutine.wrap(function()
+    while true do
+        wait(389)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Junbbinopro/Struggle/refs/heads/main/Stuggle-entity"))()
+
+end
+
+end)()
+
+-- Shocker
+coroutine.wrap(function()
+    while true do
+    wait(35)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Junbbinopro/Shocker-entity/refs/heads/main/Shocker"))()
+    
+end
+
+end)()
+
+-- Fluster
+coroutine.wrap(function()
+    while true do
+    wait(300)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Junbbinopro/Fluster-entity/refs/heads/main/Fluster"))()
+
+end
+
+end)()
+
+-- Chaotic
+coroutine.wrap(function()
+    while true do
+    wait(278)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/J63633S/Laver-mode/refs/heads/main/Chaotic"))()
+
+end
+
+end)()
+
+-- Classio
+coroutine.wrap(function()
+    while true do
+    wait(179)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/J63633S/Laver-mode/refs/heads/main/Classio-Reboundier"))()
+
+end
+
+end)()
+
+-- Blink
+coroutine.wrap(function()
+    while true do
+    wait(350)
+    loadstring(game:HttpGet("https://github.com/PABMAXICHAC/doors-monsters-scripts/raw/main/blinkcrux"))()
+    
+end
+
+end)()
+
+-- Hunger
+coroutine.wrap(function()
+    while true do
+    wait(465)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Zeca130/doors-my-version-nightmareMode./refs/heads/main/Entity6'))()
+    
+end
+
+end)()
+
+-- Wail
+coroutine.wrap(function()
+    while true do
+    wait(750)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Zeca130/Doors-mode/refs/heads/main/Entity5'))()
+    
+end
+     
+end)()
+
+-- Him
+coroutine.wrap(function()
+    while true do
+    wait(100)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/trungdepth-dot/Him-entity-doors/refs/heads/main/Him"))()
+    
+end
+     
+end)()
+
+-- Guardian
+coroutine.wrap(function()
+    while true do
+    wait(700)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Junbbinopro/Guardian-entity/refs/heads/main/Guardian"))()
+    
+end
+     
+end)()
+
+-- Surge
+coroutine.wrap(function()
+    while true do
+    wait(600)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Junbbinopro/Surge-entity/refs/heads/main/Surge"))()
+    
+end
+     
+end)()
+
+-- Wh1t3
+coroutine.wrap(function()
+    while true do
+    wait(430)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Junbbinopro/Wh1t3/refs/heads/main/Entity"))()
+    
+end
+     
+end)()
+
+-- Greed
+coroutine.wrap(function()
+    while true do
+    wait(500)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Junbbinopro/Greed-entity/refs/heads/main/Greed"))()
+    
+end
+     
+end)()
+
+-- Bluyer
+coroutine.wrap(function()
+    while true do
+    wait(670)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Junbbinopro/Bluyer-entity/refs/heads/main/Bluyer"))()
+    
+end
+     
+end)()
+
+-- A-60
+coroutine.wrap(function()
+    while true do
+    wait(900)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/trungdepth-dot/A-60/refs/heads/main/A-60"))()
+    
+end
+     
+end)()
+
+-- 350
+coroutine.wrap(function()
+    while true do
+    wait(800)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Junbbinopro/350-entity/refs/heads/main/350"))()
+    
+end
+     
+end)()
+
+-- Sprint
+
+local UIS = game:GetService("UserInputService")
+local RunService = game:GetService("RunService")
+local Players = game:GetService("Players")
+
+local player = Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+
+--// Settings
+local WALK_SPEED = 16
+local SPRINT_SPEED = 20
+local MAX_STAMINA = 100
+local stamina = MAX_STAMINA
+local drainRate = 15 -- Points per second
+local recoverRate = 10 -- Points per second
+local isSprinting = false
+
+--// Create UI
+local screenGui = Instance.new("ScreenGui", player.PlayerGui)
+screenGui.Name = "SprintSystem"
+screenGui.ResetOnSpawn = false
+
+-- Stamina Background
+local barBack = Instance.new("Frame", screenGui)
+barBack.Name = "StaminaBack"
+barBack.Size = UDim2.new(0, 200, 0, 10)
+barBack.Position = UDim2.new(0.5, -100, 0.9, 0)
+barBack.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+barBack.BorderSizePixel = 0
+
+-- Actual Bar
+local barFill = Instance.new("Frame", barBack)
+barFill.Name = "Fill"
+barFill.Size = UDim2.new(1, 0, 1, 0)
+barFill.BackgroundColor3 = Color3.fromRGB(255, 255, 255) -- White like Doors
+barFill.BorderSizePixel = 0
+
+-- Mobile Button
+local mobileBtn = Instance.new("TextButton", screenGui)
+mobileBtn.Name = "SprintBtn"
+mobileBtn.Size = UDim2.new(0, 65, 0, 65)
+mobileBtn.Position = UDim2.new(0.75, 0, 0.78, 0)
+mobileBtn.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+mobileBtn.BackgroundTransparency = 0.4
+mobileBtn.Text = "RUN"
+mobileBtn.TextColor3 = Color3.new(1, 1, 1)
+mobileBtn.Font = Enum.Font.GothamBold
+mobileBtn.TextSize = 14
+Instance.new("UICorner", mobileBtn).CornerRadius = UDim.new(1, 0)
+
+--// Logic
+local function updateSprint()
+	if isSprinting and humanoid.MoveDirection.Magnitude > 0 and stamina > 0 then
+		humanoid.WalkSpeed = SPRINT_SPEED
+		stamina = math.max(0, stamina - (drainRate * RunService.RenderStepped:Wait()))
+	else
+		humanoid.WalkSpeed = WALK_SPEED
+		stamina = math.min(MAX_STAMINA, stamina + (recoverRate * RunService.RenderStepped:Wait()))
+		if stamina <= 0 then isSprinting = false end -- Force stop if empty
+	end
+	
+	-- Update UI
+	barFill.Size = UDim2.new(stamina / MAX_STAMINA, 0, 1, 0)
+	barFill.BackgroundTransparency = (stamina >= MAX_STAMINA) and 1 or 0
+	barBack.BackgroundTransparency = (stamina >= MAX_STAMINA) and 1 or 0
+	mobileBtn.BackgroundColor3 = isSprinting and Color3.fromRGB(200, 0, 0) or Color3.fromRGB(0, 0, 0)
+end
+
+-- Input Handlers
+mobileBtn.MouseButton1Click:Connect(function()
+	if stamina > 10 then isSprinting = not isSprinting end
+end)
+
+UIS.InputBegan:Connect(function(input, gpe)
+	if not gpe and input.KeyCode == Enum.KeyCode.LeftShift then isSprinting = true end
+end)
+
+UIS.InputEnded:Connect(function(input)
+	if input.KeyCode == Enum.KeyCode.LeftShift then isSprinting = false end
+end)
+
+RunService.RenderStepped:Connect(updateSprint)
+   
+-- Guiding Candle
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Junbbinopro/Guiding-light-candle/refs/heads/main/Candle"))()
