@@ -1,4 +1,4 @@
-require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("doors ultra hard mode loaded by Jun Version V1",true)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("doors ultra hard mode loaded by Jun and zunxd Version V1",true)
  wait(6)
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("credits: Jun, zunxd creator[candle script], TraMinhNgoc,",true)
  wait(6)
